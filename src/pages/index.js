@@ -18,7 +18,7 @@ const Home = () => {
     }
   `)
   return (
-    <div className='container' style={{'flexWrap':'wrap !important'}}>
+    <div className='container' style={{'display':'flex','flexWrap':'wrap !important'}}>
       {data.allCatServer.edges.map(edge => {
         return <Card key={edge.node.id} other={edge.node.id} text={edge.node.text} user={edge.node.user}></Card>
       })}
